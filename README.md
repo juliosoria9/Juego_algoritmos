@@ -35,17 +35,31 @@ Un juego por turnos en **C++** para dos jugadores, donde cada jugador compite us
 
 ---
 ---
-## NIVEL DESARROLLADOR
+##  Nivel Desarrollador
 
-|--------------------**ARCHIVOS**--------------------|
+### 📁 Archivos del Proyecto
 
-├── main.cpp               # Punto de entrada al juego
-├── Partida.cpp            # Lógica principal del juego y control de flujo
-├── Carta.h                # Clase Carta con atributos y métodos
-├── ListaCircular.cpp      # Estructura dinámica circular para las manos
-├── Nodo.cpp               # Nodo doble para la lista circular
-├── Lector_cartas.cpp      # Lee cartas desde archivo .txt
-├── cartas.txt             # Archivo de datos de entrada con las cartas
+- **`main.cpp`**  
+  Punto de entrada del programa. Crea una instancia de la clase `Partida` y comienza el juego.
+
+- **`Partida.cpp`**  
+  Lógica principal del juego. Controla el flujo de rondas, puntuación y uso de cartas.
+
+- **`Carta.h`**  
+  Define la clase `Carta`, con atributos como nombre, puntos y habilidad especial.
+
+- **`ListaCircular.cpp`**  
+  Implementación de la estructura de lista circular doble usada para el mazo de cada jugador.
+
+- **`Nodo.cpp`**  
+  Nodo doble que se usa como unidad de la lista circular.
+
+- **`Lector_cartas.cpp`**  
+  Lee las cartas desde un archivo de texto (`cartas.txt`) y las convierte en objetos `Carta`.
+
+- **`cartas.txt`**  
+  Archivo de entrada con la información de todas las cartas disponibles para el juego.
+
 
 ---
 ##  `main.cpp`
