@@ -1,0 +1,62 @@
+﻿  Carta.cpp
+  Lector_cartas.cpp
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(18,24): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "Lector_cartas.cpp")
+  
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(39,16): warning C4244: 'return': conversión de 'const float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Lector_cartas.cpp")
+  
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(49,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "Lector_cartas.cpp")
+  
+  Nodo.cpp
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(18,24): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "Nodo.cpp")
+  
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(39,16): warning C4244: 'return': conversión de 'const float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Nodo.cpp")
+  
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(49,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "Nodo.cpp")
+  
+  Partida.cpp
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(18,24): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "Partida.cpp")
+  
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(39,16): warning C4244: 'return': conversión de 'const float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Partida.cpp")
+  
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(49,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "Partida.cpp")
+  
+C:\Users\julio\source\repos\proyecto_algoritmos\Partida.cpp(94,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  ListaCircular.cpp
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(18,24): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "ListaCircular.cpp")
+  
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(39,16): warning C4244: 'return': conversión de 'const float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "ListaCircular.cpp")
+  
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(49,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "ListaCircular.cpp")
+  
+  proyecto_algoritmos.cpp
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(18,24): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "proyecto_algoritmos.cpp")
+  
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(39,16): warning C4244: 'return': conversión de 'const float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "proyecto_algoritmos.cpp")
+  
+C:\Users\julio\source\repos\proyecto_algoritmos\Carta.h(49,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "proyecto_algoritmos.cpp")
+  
+C:\Users\julio\source\repos\proyecto_algoritmos\Partida.cpp(94,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  (compilando archivo de origen "proyecto_algoritmos.cpp")
+  
+  Generando código
+  Previous IPDB not found, fall back to full compilation.
+C:\Users\julio\source\repos\proyecto_algoritmos\Partida.cpp(311): warning C4715: 'Partida::verificar_ganador': no todas las rutas de acceso de control devuelven un valor
+C:\Users\julio\source\repos\proyecto_algoritmos\Partida.cpp(269): warning C4715: 'Partida::habilidades': no todas las rutas de acceso de control devuelven un valor
+  All 262 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Generación de código finalizada
+  proyecto_algoritmos.vcxproj -> C:\Users\julio\source\repos\proyecto_algoritmos\x64\Release\proyecto_algoritmos.exe

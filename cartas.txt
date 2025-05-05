@@ -1,0 +1,29 @@
+1 puntos;1;ninguno
+2 puntos;2;ninguno
+3 puntos;3;ninguno
+5 puntos;5;ninguno
+7 puntos;7;ninguno
+8 puntos;8;ninguno
+4 puntos;4;ninguno
+9 puntos;9;ninguno
+1 puntos;1;ninguno
+2 puntos;2;ninguno
+3 puntos;3;ninguno
+5 puntos;5;ninguno
+7 puntos;7;ninguno
+8 puntos;8;ninguno
+4 puntos;4;ninguno
+9 puntos;9;ninguno
+1 puntos;1;ninguno
+2 puntos;2;ninguno
+3 puntos;3;ninguno
+5 puntos;5;ninguno
+7 puntos;7;ninguno
+8 puntos;8;ninguno
+4 puntos;4;ninguno
+9 puntos;9;ninguno
+duplicador mayor;-3;duplica los puntos de tu mejor carta
+duplicador menor;-1;duplica los puntos de tu peor carta
+divisor;-1;divide los puntos de la mejor carta del oponente
+removedor;-1; cambia tus cartas por cartas de tu pila
+ordenador;-4; ordena tus cartas de mayor a menor (de tu pila de cartas)
