@@ -228,3 +228,28 @@ Cada nodo representa un elemento de la lista (una carta), y mantiene enlaces dob
 - La lista se puede recorrer hacia adelante o hacia atrás gracias a los punteros `siguienteNodo` y `anteriorNodo`.
 - El atributo `elemento` es un objeto `Carta`, que contiene toda la información necesaria de la carta.
 
+  ## ⚙️ Algoritmos y Estructuras Usadas
+
+Este proyecto utiliza varios algoritmos y estructuras de datos clave para simular la mecánica de un juego de cartas por turnos.
+
+###  Tabla de algoritmos
+
+| Algoritmo                  | Dónde se usa                          | Tipo                  | Justificación                                                                 |
+|----------------------------|---------------------------------------|-----------------------|-------------------------------------------------------------------------------|
+| **Búsqueda lineal**        | `buscar_indice_max()` y `buscar_indice_min()` | Algoritmo de búsqueda | Recorrido simple y eficiente en listas pequeñas (≤10 elementos).              |
+| **Ordenación burbuja**     | `ListaCircular::ordenar()`            | Algoritmo de ordenación | Fácil de implementar, ideal para ordenar ≤10 cartas rápidamente.              |
+| **Lista circular doble**   | `ListaCircular`                       | Estructura de datos    | Simula un mazo que puede girarse, ideal para dinámicas de rotación.          |
+
+---
+
+###  ¿Por qué estos algoritmos?
+
+- **Búsqueda lineal**: es suficiente para encontrar cartas con más o menos puntos sin complicaciones.
+- **Ordenación burbuja**: aunque no es la más eficiente, es muy clara para este tipo de listas pequeñas.
+- **Lista circular doblemente enlazada**: permite rotar las cartas, eliminar o insertar fácilmente desde cualquier posición.
+
+---
+
+
+  
+
