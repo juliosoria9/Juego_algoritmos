@@ -73,7 +73,7 @@ Archivo principal del proyecto.
 ##  `Partida.cpp`
 Clase principal que controla la ejecución del juego: preparación, desarrollo de rondas y puntuaciones.
 
-### 🧮 Atributos de la clase `Partida`
+###  Atributos de la clase `Partida`
 
 | Variable              | Tipo          | Descripción                                              |
 |-----------------------|---------------|----------------------------------------------------------|
@@ -110,14 +110,7 @@ Clase principal que controla la ejecución del juego: preparación, desarrollo d
 
 #### `int buscar_indice_min(ListaCircular& lista)`
 - Devuelve el índice de la carta con menor puntaje **mayor que 0** (para evitar habilidades).
-
-#### `int verificar_ganador()`
-- Comprueba si un jugador ha ganado 2 rondas.
-- Retorna `1` si hay ganador, `0` si la partida continúa.
-
-#### `void instrucciones()`
-- Muestra al usuario las reglas del juego, los turnos y las habilidades disponibles.
-
+  
   ---
   ##  `Lector_cartas.cpp`
 
@@ -132,12 +125,6 @@ Este archivo contiene la implementación de la clase `lector_cartas`, encargada 
 - Omite líneas vacías o comentadas (que empiezan con `#`).
 - Utiliza `stringstream`, `getline` y `stoi` para parsear los datos.
 
-#### `int get_contador()`
-- Devuelve la cantidad de cartas leídas y almacenadas.
-
-#### `Carta* get_cartas()`
-- Devuelve el puntero al array de cartas cargadas.
-
 #### `int mostrar_cartas()`
 - Imprime por pantalla todas las cartas leídas del archivo usando el método `mostrar()` de cada carta.
 
@@ -149,10 +136,11 @@ Este archivo contiene la implementación de la clase `lector_cartas`, encargada 
 | `int contador`   | Entero    | Número de cartas válidas leídas del archivo |
 | `int capacidad`  | Entero    | Tamaño reservado inicialmente para el array |
 
-### 📝 Formato de entrada esperado (`cartas.txt`)
+###  Formato de entrada esperado (`cartas.txt`)
 
 Cada carta debe estar en una línea con el siguiente formato: nombre;puntos;habilidad
-## 📄 `Carta.h`
+---
+##  `Carta.h`
 
 Define la clase `Carta`, que representa una carta dentro del juego. Cada carta tiene un nombre, un valor de puntos y una habilidad especial.
 
@@ -207,15 +195,9 @@ Devuelve la carta ubicada en la posición indicada.
 #### `void setCarta(int posicion, const Carta& nuevaCarta)`
 Reemplaza la carta en una posición con una nueva carta.
 
-#### `int getN()`
-Devuelve la cantidad de cartas actualmente en la lista.
-
 #### `void insertar(int posicion, const Carta& nuevaCarta)`
 Inserta una nueva carta en la posición indicada.  
 Actualiza los punteros para mantener la circularidad.
-
-#### `void eliminar(int posicion)`
-Elimina la carta en la posición indicada y libera la memoria del nodo.
 
 #### `void girar(int p)`
 Rota la lista `p` posiciones hacia adelante (si `p > 0`) o hacia atrás (si `p < 0`).
@@ -226,11 +208,23 @@ Imprime todas las cartas de la lista utilizando el método `mostrar()` de `Carta
 #### `void ordenar()`
 Ordena las cartas por puntos de **mayor a menor** usando el algoritmo **burbuja**.
 
-#### `~ListaCircular()`
-Destructor. Libera la memoria de todos los nodos en la lista circular.
-
-
 ---
+##  `Nodo.cpp`
+
+Define la estructura `Nodo`, utilizada por la clase `ListaCircular`.  
+Cada nodo representa un elemento de la lista (una carta), y mantiene enlaces dobles hacia el nodo anterior y el siguiente.
+
+###  Atributos
+
+| Atributo            | Tipo      | Descripción                               |
+|---------------------|-----------|-------------------------------------------|
+| `Carta elemento`    | Objeto    | Contiene la carta almacenada en el nodo   |
+| `Nodo* anteriorNodo`| Puntero   | Apunta al nodo anterior en la lista       |
+| `Nodo* siguienteNodo`| Puntero  | Apunta al nodo siguiente en la lista      |
 
 
+### uso
+- El nodo es parte de una **lista circular doblemente enlazada**.
+- La lista se puede recorrer hacia adelante o hacia atrás gracias a los punteros `siguienteNodo` y `anteriorNodo`.
+- El atributo `elemento` es un objeto `Carta`, que contiene toda la información necesaria de la carta.
 
