@@ -48,26 +48,60 @@ Un juego por turnos en **C++** para dos jugadores, donde cada jugador compite us
 ├── cartas.txt             # Archivo de datos de entrada con las cartas
 
 ---
-## main.cpp
--simplemente se crea y inicia una clase partida llamando a la funcion principal
+##  `main.cpp`
+Archivo principal del proyecto.
+
+- Crea una instancia de la clase `Partida`.
+- Llama al método `partida()` para iniciar el juego.
+
 ---
-## partida.cpp
-- clase encargada del funcionamiento de la partida
-- -------**MEtODOS**-------
-         - int partida()
-                    -gestina la llamada a las funciones ademas del curso de la partida mensajes y en general todo lo necesario para el correcto transcruso de la partida
-         - int asignar_cartas(ListaCircular& lista)
-                    -se le pasa una lista y se le insertan 10 cartas aleatorias de las que hemos añadido en el txt la aleatoriedad varia en funcion de la hora
-         - int ronda()
-                    -gestion la ronda haciendo un bucle que dura 4 veces ya que son los turnos de cada jugador y mostrando las cartas en funcion de la ronda 
-         - int habilidades(Carta carta,ListaCircular& lista,int i)
-                    -esta funcion se encarga de gestionar las habilidades comparando el nombre de las cartas y haciendo las llamadas a las funciones 
-         - int buscar_indice_max(ListaCircular& lista)
-                    - busca el indice de la carta con mayor puntuacion y devuelve el indice 
-         - int buscar_indice_min(ListaCircular& lista)
-                    -busca el indice de la carta con la puntuacion mas baja y que sea mayor a 0 para evitar cojer cartas especiales y te lo devuelve 
-         - int verificar_ganador()
-                    - verifica que jugador gana la partida usando rondas totales
-         - void instrucciones()
-                    -esta funcion se encarga de mostrar las instrucciones del juego
+
+##  `Partida.cpp`
+Clase principal que controla la ejecución del juego: preparación, desarrollo de rondas y puntuaciones.
+
+### 🧮 Atributos de la clase `Partida`
+
+| Variable              | Tipo          | Descripción                                              |
+|-----------------------|---------------|----------------------------------------------------------|
+| `Carta* array_cartas` | puntero       | Array dinámico de cartas cargadas desde el archivo `.txt` |
+| `int contador`        | entero        | Número total de cartas cargadas                          |
+| `lector_cartas lector`| objeto        | Objeto que lee las cartas del archivo                    |
+| `ListaCircular lista_jugador1` | objeto | Mazo del jugador 1                                       |
+| `ListaCircular lista_jugador2` | objeto | Mazo del jugador 2                                       |
+| `int puntos_total_j1/j2` | entero     | Puntos acumulados por cada jugador durante la partida    |
+| `int puntos_ronda_j1/j2`| entero     | Puntos obtenidos en la ronda actual                      |
+| `int rondas_j1/j2`    | entero        | Rondas ganadas por cada jugador                          |
+
+###  Métodos principales
+
+#### `int partida()`
+- Controla el flujo general del juego.
+- Reparte cartas, lanza rondas, muestra mensajes y determina el ganador.
+
+#### `int asignar_cartas(ListaCircular& lista)`
+- Inserta 10 cartas aleatorias en la lista recibida como parámetro.
+- La aleatoriedad se basa en la hora del sistema (`srand(time(0))`).
+
+#### `int ronda()`
+- Controla una ronda completa (4 turnos por jugador).
+- Muestra las cartas disponibles y permite jugar o reservar cartas.
+- Aplica las habilidades especiales de cada carta usada.
+
+#### `void habilidades(Carta carta, ListaCircular& lista, int i)`
+- Identifica la habilidad de la carta jugada y aplica su efecto sobre la lista.
+- Efectos como duplicar, dividir, ordenar o girar el mazo.
+
+#### `int buscar_indice_max(ListaCircular& lista)`
+- Devuelve el índice de la carta con más puntos en la lista.
+
+#### `int buscar_indice_min(ListaCircular& lista)`
+- Devuelve el índice de la carta con menor puntaje **mayor que 0** (para evitar habilidades).
+
+#### `int verificar_ganador()`
+- Comprueba si un jugador ha ganado 2 rondas.
+- Retorna `1` si hay ganador, `0` si la partida continúa.
+
+#### `void instrucciones()`
+- Muestra al usuario las reglas del juego, los turnos y las habilidades disponibles.
+
 
