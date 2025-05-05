@@ -4,40 +4,35 @@ Un juego por turnos en **C++** para dos jugadores, donde cada jugador compite us
 
 ---
 
-## 🎯 Objetivo del Juego
+##  Objetivo del Juego
 
 - Jugar hasta **3 rondas**.
 - En cada ronda, puedes jugar **hasta 4 cartas**.
 - Gana la ronda quien **sume más puntos**.
+- cada carta tiene diferentes puntos algunos te quitan puntos pero tienen habilidades.
 - Algunas cartas tienen **habilidades especiales** que modifican el juego.
 - Gana la partida quien gane **2 rondas** o tenga más puntos totales.
 
 ---
 
-## 🧠 Mecánica
+##  Mecánica
 
 - Cada jugador recibe **10 cartas aleatorias**.
 - En cada turno se muestran **4 cartas disponibles**.
-- Puedes **usar una carta o saltar** un turno.
-- Algunas cartas usan algoritmos como:
-  - 🔁 Ordenamiento burbuja
-  - 🔍 Búsqueda del mayor o menor puntaje
-  - 🔄 Giro de lista circular
-  - 💥 Modificaciones directas a la mano
-
+- Puedes **usar una carta de las 4**.
+- en el cuarto turno **puedes elegir si quieres usar la carta o guardartela**
 ---
 
 ## 💡 Habilidades Especiales
 
 | Habilidad           | Descripción                                                              |
 |---------------------|--------------------------------------------------------------------------|
-| `duplicador mayor`  | Duplica los puntos de tu carta con más puntos                           |
-| `duplicador menor`  | Duplica los puntos de tu carta con menos puntos (> 0)                   |
-| `divisor`           | Divide por 2 los puntos de la carta más fuerte del oponente             |
-| `removedor`         | Gira tu mazo (lista circular), cambiando el orden de tus cartas         |
-| `ordenador`         | Ordena tus cartas de mayor a menor usando **burbuja**                  |
+| `duplicador mayor`  | Duplica los puntos de tu carta con más puntos                            |
+| `duplicador menor`  | Duplica los puntos de tu carta con menos puntos mayor a 0                |
+| `divisor`           | Divide por 2 los puntos de la carta más fuerte del oponente              |
+| `removedor`         | Gira tu mazo (lista circular), cambiando el orden de tus cartas          |
+| `ordenador`         | Ordena tus cartas de mayor a menor usando **burbuja**                    |
 
 ---
 
-## 🗂️ Estructura del Proyecto
 
