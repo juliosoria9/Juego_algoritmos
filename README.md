@@ -34,5 +34,15 @@ Un juego por turnos en **C++** para dos jugadores, donde cada jugador compite us
 | `ordenador`         | Ordena tus cartas de mayor a menor usando **burbuja**                    |
 
 ---
+---
+## NIVEL DESARROLLADOR
 
+         |--------------------**ARCHIVOS**--------------------|
+├── main.cpp               # Punto de entrada al juego
+├── Partida.cpp            # Lógica principal del juego y control de flujo
+├── Carta.h                # Clase Carta con atributos y métodos
+├── ListaCircular.cpp      # Estructura dinámica circular para las manos
+├── Nodo.cpp               # Nodo doble para la lista circular
+├── Lector_cartas.cpp      # Lee cartas desde archivo .txt
+├── cartas.txt             # Archivo de datos de entrada con las cartas
 
